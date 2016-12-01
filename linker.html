@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Linker</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script src="analyzer.js"></script>
+        <script>
+
+            var person1 = {
+                "first_name" : "ahmed",
+                "last_name" : "yasser",
+                "country" : "egypt",
+            };
+
+            var person2 = {
+                "first_name" : "mahmoud",
+                "last_name" : "abdullh",
+                "country" : "UAE",
+            };
+
+            var person3 = {
+                "first_name" : "ali",
+                "last_name" : "zaid",
+                "country" : "egypt",
+            };
+
+            var people = [person1, person2, person3];
+
+
+            var cons = analyzeJSON(people, "country", 1);
+
+            console.log(cons);
+
+
+
+        </script>
+    </body>
+</html>
